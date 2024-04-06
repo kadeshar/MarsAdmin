@@ -297,6 +297,7 @@ function InitControls()
   MangAdmin:PrepareScript(ma_shutdownbutton       , Locale["tt_ShutdownButton"]     , function() Shutdown(ma_shutdowneditbox:GetText()) end)
   MangAdmin:PrepareScript(ma_loadtablebutton      , nil                             , function() ReloadTable(UIDropDownMenu_GetSelectedValue(ma_reloadtabledropdown)) end)
   MangAdmin:PrepareScript(ma_loadscriptsbutton    , nil                             , function() ReloadScripts() end)
+  MangAdmin:PrepareScript(ma_reloadworldconfigbutton , Locale["tt_ReloadWorldConfig"], function() ReloadWorldConfig() end)
 
 --[[Log Tab]]
 --[[Who Tab]]

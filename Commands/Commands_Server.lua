@@ -44,3 +44,8 @@ function ReloadScripts()
   MangAdmin:ChatMsg(".loadscripts")
   MangAdmin:LogAction("(Re-)Loaded scripts.")
 end
+
+function ReloadWorldConfig()
+  MangAdmin:ChatMsg(".reload config")
+  MangAdmin:LogAction("Reloaded world config.")
+end

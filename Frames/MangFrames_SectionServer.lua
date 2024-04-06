@@ -192,7 +192,27 @@ function MangAdmin:CreateServerSection()
     },
     text = "(Re-)Load Scripts"
   })
-
+  
+  FrameLib:BuildButton({
+    name = "ma_reloadworldconfigbutton",
+    group = "server",
+    parent = ma_midframe,
+    texture = {
+      name = "ma_reloadworldconfigbutton_texture",
+      color = {color.btn.r, color.btn.g, color.btn.b, transparency.btn}
+    },
+    size = {
+      width = 100,
+      height = 20
+    },
+    setpoint = {
+      pos = "TOPLEFT",
+      offX = 635,
+      offY = -65
+    },
+    text = "Reload World Config"
+  })
+  
   FrameLib:BuildFrame({
     type = "EditBox",
     name = "ma_shutdowneditbox",
@@ -205,7 +225,7 @@ function MangAdmin:CreateServerSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 600,
-      offY = -68
+      offY = -100
     },
     inherits = "InputBoxTemplate"
   })
@@ -225,7 +245,7 @@ function MangAdmin:CreateServerSection()
     setpoint = {
       pos = "TOPLEFT",
       offX = 635,
-      offY = -68
+      offY = -100
     },
     text = Locale["ma_ShutdownButton"]
   })

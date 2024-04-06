@@ -548,6 +548,7 @@ function Return_enUS()
   --[[Tooltips]]
     ["tt_AnnounceButton"] = "Announce a system message.",
     ["tt_ShutdownButton"] = "Shut down the server in the amount of seconds from the field, if omitted shut down immediately!",
+	["tt_ReloadWorldConfig"] = "Reloading World config settings (not all settings are reloaded but FlexCraft working)",
   --[[Control Labels]]
     ["ma_AnnounceButton"] = "Announce",
     ["ma_ShutdownButton"] = "Shutdown!",
